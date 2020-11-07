@@ -1,1 +1,4 @@
-notebooks/.ipynb_checkpoints/
+data/play_by_play_fbs_regular_all.csv
+notebooks/.ipynb_checkpoints/*
+data/.DS_Store
+.DS_Store
