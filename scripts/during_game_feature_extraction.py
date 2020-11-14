@@ -11,7 +11,7 @@ df = pd.read_csv("../data/play_by_play_fbs_regular_all.csv")
 team_elos = json.load(open("../data/elo_features.json"))
 games = pd.read_csv("../data/games.csv")
 print("Sampling")
-sample = df.sample(100_000).copy()
+sample = df.sample(100_000).copy().reset_index(drop=True)
 
 print("Joining")
 joined_games = sample.merge(games, left_on="game_id", right_on="id", how="left")
